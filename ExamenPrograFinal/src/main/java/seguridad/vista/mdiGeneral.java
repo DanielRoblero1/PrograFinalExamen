@@ -75,7 +75,7 @@ public class mdiGeneral extends javax.swing.JFrame {
 
         jMenu4.setText("Catalogos");
 
-        jMenuItem3.setText("Mantenimiento Usuarios");
+        jMenuItem3.setText("Mantenimiento Peliculas");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem3ActionPerformed(evt);
@@ -136,7 +136,7 @@ public class mdiGeneral extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        frmMantenimientoUsuarios ventana = new frmMantenimientoUsuarios();
+        frmMantenimientoPeliculas ventana = new frmMantenimientoPeliculas();
         jDesktopPane1.add(ventana);
         Dimension desktopSize = jDesktopPane1.getSize();
         Dimension FrameSize = ventana.getSize();
