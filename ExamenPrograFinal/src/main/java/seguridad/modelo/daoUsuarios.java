@@ -14,7 +14,7 @@ import java.util.List;
  *
  * @author visitante
  */
-public class daoUsuario {
+public class daoUsuarios {
 
     private static final String SQL_SELECT = "SELECT idUsuarios , Usuario, Password, estado FROM usuarios";
     private static final String SQL_INSERT = "INSERT INTO usuarios(Usuario, Password, estado) VALUES(?, ?, ?)";

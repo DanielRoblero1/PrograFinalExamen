@@ -83,7 +83,7 @@ public class frmLogin extends javax.swing.JFrame {
             }
         });
 
-        cbxAreas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione:", "Area Seguridad", "Area Logistica", "Area Compras", "Area Ventas", "Area RRHH", "Prototipo" }));
+        cbxAreas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione:", "Area Seguridad", " " }));
 
         lblArea.setText("Area");
 
@@ -149,14 +149,12 @@ public class frmLogin extends javax.swing.JFrame {
     private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
         // TODO add your handling code here:
 
-        clsBitacora bitacora = new clsBitacora();
-
         if (txtUsuario.getText().trim().isEmpty() || txtContraseña.getText().trim().isEmpty()) {
             JOptionPane.showMessageDialog(this, "NO PUEDEN HABER CAMPOS VACIOS", "ERROR", JOptionPane.ERROR_MESSAGE);
         } else {
             try {
-                clsUsuario usuarioAConsultar = new clsUsuario();
-                daoUsuario usuarioDAO = new daoUsuario();
+                clsUsuarios usuarioAConsultar = new clsUsuarios();
+                daoUsuarios usuarioDAO = new daoUsuarios();
                 usuarioAConsultar.setUsunombre((txtUsuario.getText().trim()));
                 // Recuperación de información a través de otro objeto
                 usuarioAConsultar = usuarioDAO.queryn(usuarioAConsultar);
